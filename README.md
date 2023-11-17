@@ -9,10 +9,10 @@ Network monitoring with prometheus and grafana
 
 
 ### Network configuration diagram
-
+![network](https://github.com/hashiyuta12/prometheus/assets/38589810/f6bb3925-4423-4a84-9d97-eaabf2dfae56)
 
 ### System architecture
-
+![architecture](https://github.com/hashiyuta12/prometheus/assets/38589810/04045ea3-650d-4e48-9d90-636365793d3a)
 
 ## Deploy
 ### Create snmp.yml file
