@@ -3,26 +3,26 @@ version: '3'
 services:
   prometheus:
     image: prom/prometheus
-    container_name: prometheus1
+    container_name: prometheus
     volumes:
-      - /Users/root1/Documents/project/prometheus/snmp-exporter/prometheus.yml:/etc/prometheus/prometheus.yml
+      - #your directory#/prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - 9090:9090
 
   grafana:
     image: grafana/grafana
-    container_name: grafana1
+    container_name: grafana
     ports:
       - 3000:3000
     env_file:
-      - /Users/root1/Documents/project/prometheus/snmp-exporter/grafana.env
+      - #your directory#/snmp-exporter/grafana.env
 
   snmp-exporter:
     build:
       context: .
       dockerfile: dockerfile
-    container_name: snmp-exporter1
+    container_name: snmp-exporter
     volumes:
-      - /Users/root1/Documents/project/prometheus/snmp-exporter/snmp.yml:/snmp_exporter-0.23.0.linux-amd64/snmp.yml
+      - #your directory#/snmp.yml:/snmp_exporter-0.23.0.linux-amd64/snmp.yml
     ports:
       - 9116:9116
