@@ -75,3 +75,6 @@ Network monitoring with prometheus and grafana
 ### Execute docker-compose
 ex.)
   >docker compose up
+
+## Monitoring example
+![dashboard](https://github.com/hashiyuta12/prometheus/assets/38589810/285e5362-e13f-41c2-89ac-c2519f5b0663)
